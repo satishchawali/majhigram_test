@@ -1,0 +1,13 @@
+package com.ecommerce.service.admin;
+
+import com.ecommerce.dto.FeedbackDto;
+
+import java.util.List;
+
+public interface AdminFeedbackService {
+    List<FeedbackDto> getAllFeedbacks();
+    FeedbackDto getFeedbackById(Long id);
+    FeedbackDto createFeedback(FeedbackDto feedbackDto);
+    FeedbackDto updateFeedback(Long id, FeedbackDto updatedFeedbackDto);
+    void deleteFeedback(Long id);
+}
